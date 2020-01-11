@@ -1,0 +1,117 @@
+Object Oriented Programming
+	Object
+		Behavior (aka method or function or service)
+		Information (aka data)
+		
+--Bottle statistics--
+
+---Sending money through banks--
+
+Customer sender, reciever
+Bank boa, chase
+Account
+Money
+Name
+CustomerResponse
+Phone senderPhone
+Number number
+
+
+
+Boolean authenticated = sender.loginToBankWebsite (boa, userid, password)
+IF authenticated is valid
+	boolean response = boa.sendMeMessageToValidateThatRightUser()
+	IF response is valid 
+		CustomerResponse response = boa.provideRecommendModeOfValidation();
+		IF respone.isTextMessage()
+			number = senderPhone.receiveCode()
+			sender.putTheCodeOnBank(number, boa)
+			sender.clickTransferMoney(boa)
+			Customer receiver = sender.selectTheReciever(boa)
+			Account account = sender.findTheAccountFromWhereFundsNeedToBeTransferred(boa)
+			Money money = account.deductMoney();
+			receiver.recieveMoney(money)
+		ELSE
+		
+		END
+	ELSE
+	
+	END
+
+ELSE
+	boa.displayMessageThatCredentialsAreNotRight()
+	Name userId = sender.recollectTheRightUserId()
+	sender.loginToBankWebsite(boa, name.getUserId(), password)
+
+END
+-------
+
+Customer
+	Information:
+		
+		String name
+		//account1, account2, account3
+		Account account[]
+		String userId
+		String password
+		String phoneNumber
+		Gender gender
+	
+	Behavior
+		
+		loginToBankWebsite(Bank bank, String userid, String password)
+		putTheCodeOnBankWebsite()
+		selectTransferMoney()
+		findTheAccountFromWhereTransferNeedsToHappen()
+		selectTheReceiver()
+		
+---------------
+Start a Virtual teaching class
+
+Teacher siva
+Student leena, poonam, geetha, a, b, c, d, ....
+OnlineTrainingApplication neu
+teacher.logInToPortalAsTeacher(neu)
+leena.loginToPortalAsStudent(neu)
+poonam.loginToPortalAsStudent(neu)
+a.loginToPortalAsStudent(neu)
+b.loginToPortalAsStudent(neu)
+c.loginToPortalAsStudent(neu)
+d.loginToPortalAsStudent(neu)
+e.loginToPortalAsStudent(neu)
+f.loginToPortalAsStudent(neu)
+g.loginToPortalAsStudent(neu)
+h.loginToPortalAsStudent(neu)
+teacher.startTheClass(neu)
+
+--------
+Student[] students
+teacher.logInToPortalAsTeacher(neu)
+LOOP student in students
+	student.loginToPortalAsStudent(neu)
+END
+
+----
+
+Source Code - Written by programmers : Test.java
+Compile Code - Compiled by compiler (computer) : javac Test.java
+Executable code - Run by computer : java Test
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
