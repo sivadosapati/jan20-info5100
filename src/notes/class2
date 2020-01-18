@@ -1,0 +1,144 @@
+Java Program syntax...
+
+class Test{
+	public static void main(String args[]){
+		System.out.println("North Eastern University");
+	}
+
+}
+class iPhone{
+	float price;
+	String color;
+}
+
+class String{
+	char[] characters;
+}
+
+class Skills{
+
+}
+
+class Professor{
+	Skills skills;
+	byte workExperienceInYears;
+	float teachingExperience;
+	float salaryPerMonth;
+	boolean usCitizen;
+	char initial;
+	
+	char[] name;
+	String name;
+	
+	void teach(){
+	
+	}
+
+}
+
+class Student{
+	void listen(){
+	
+	}
+	
+	String answerQuestion(String question){
+		//Logic;
+		
+		return "xxxx";
+	}
+	Number multiply(Number a, Number b){
+	
+	}
+	
+}
+
+--------
+
+Numbers
+	byte = 2^7 - 1 = 1 byte
+	short = 2 bytes 
+	int = 4 bytes
+	long = 8 bytes 
+	
+	float = 4 bytes
+	double = 8 bytes
+
+Characters
+
+	char = 2 bytes
+	
+Boolean
+	boolean = 1 byte
+	
+	
+	
+Logic
+
+if(<condition>){
+
+	//Logic
+
+}	
+	
+<<condition>
+
+age > 10
+gender.equals("male") && gpa > 4
+
+class Person{
+	boolean hungry;
+	String contentsInFridge;
+	
+	void sleep(){
+		layOnTheBed();
+		think();
+	}
+	void think(){
+	
+	}
+	void eat(){
+		if( hungry && contentsInFridge.equals("Milk")){
+			Sysout("Drink milk")
+		}
+		if( hungry && contentsInFridge.equals("Bread")){
+			Sysout("Eat bread")
+		}
+		///
+		if( hungry == true){
+			if( contentsInFridge.contains("Milk")){
+			
+			}
+			if( contentsInFridge.contains("Bread") && contentsInFridge.contains("Jam")){
+				
+			}
+		
+		
+		}	
+		
+		
+	}
+}
+
+
+----Looops---
+
+while(<condition>){
+
+}
+
+
+for(init;condition;increment){
+
+
+}
+
+for (a : b){
+
+}	
+	
+	
+	
+	
+	
+	
+	
