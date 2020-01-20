@@ -1,0 +1,96 @@
+/* Deadline 24 Jan, Friday, 11:59PM.
+   * Extra credit points will be added if total points are less than 10.
+   * Try every question and keep practicing from other online sites.
+   * Contact us if any assistance is needed.
+   */
+   
+   
+1) Write a method to take a String and character as input and find how many characters are in the String
+	Example #1
+		Input : "North", 'r'
+		Output : "North" has 1 'r'
+
+2) Write a method to find the maximum and minimum number in an array of numbers
+	Example:
+		Input : [3, 5, 7, 1, 4, 32, 15]
+		Output : Max is 32 and Min is 1
+
+3) Write a java function that adds all the digits of an integer until it is single digit.
+		i. function takes an integer as input and returns its sum of digits.
+		ii. for example input = 37, sum = 3+7 = 10, sum = 1+0 = 1. result = 1.
+
+		Here is the prototype you can work with
+	
+		public int addDigits (int input){
+		}
+
+
+4) Question
+
+public class Assignment2 {
+	    // Assignment
+	    /**
+	     * Write a method to calculate the Social Security Tax of an employee and print it.
+	     * If the salary is less than or equal to 8900, the Social Security Tax is 6.2% of the salary.
+	     * If the salary is more than 8900, the Social Security Tax is 6.2% of 106,800.
+	     */
+	    public double socialSecurityTax(Employee employee) {
+	        //write your code here
+	    	
+	    }
+	
+       /**
+	     * Write a method to calculate an employee's contribution for insurance coverage and print it.
+	     * Amount of deduction is computed as follows:
+	     * If the employee is under 35, rate is 3% of salary; if the employee is between 35 and 50(inclusive), rate is 4% of salary;
+	     * If the employee is between 50 and 60(exclusive), rate is 5% of salary; If the employee is above 60, rate is 6% of salary.
+	     */
+	    public static double insuranceCoverage(Employee employee) {
+	        //write your code here
+	    }
+	
+
+	    /**
+	     * Write a method to sort three employees' salary from low to high, and then print their name in order.
+	     * For example, Alice's salary is 1000, John's salary is 500, Jenny's salary is 1200, you should print:
+	     * John Alice Jenny
+	     */
+	    public void sortSalary(Employee e1, Employee e2, Employee e3) {
+	        //write your code here
+	    }
+
+//Extra credit
+	
+
+	    /**
+	     * I have written some code below. What I want is to swap two Employee objects.
+	     * One is Jenny and one is John. But after running it, I got the result below:
+	     * Before: a=Jenny
+	     * Before: b=John
+	     * After: a=Jenny
+	     * After: b=John
+	     * There is no change after swap()! Do you know the reason why my swap failed?
+	     * Write your understanding of the reason and explain it.
+	     */
+	    /*
+	     write your understanding here.
+	     Your Answer:
+	    */
+	    public static void main(String[] args) {
+	        Employee a = new Employee("Jenny", 20, Gender.FEMALE, 2000);
+	        Employee b = new Employee("John", 30, Gender.MALE, 2500);
+	        System.out.println("Before: a=" + a.getName());
+	        System.out.println("Before: b=" + b.getName());
+	        swap(a, b);//
+	        System.out.println("After: a=" + a.getName());
+	        System.out.println("After: b=" + b.getName());
+	    }
+	
+
+	    public static void swap(Employee x, Employee y) {
+	        Employee temp = x;
+	        x = y;
+	        y = temp;
+	    }
+	}
+
