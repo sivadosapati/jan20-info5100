@@ -1,0 +1,63 @@
+class Bag{
+	Laptop laptop;
+	void placeBooks(){
+	
+	}
+	
+	Laptop takeLaptop(){
+		return laptop;
+	}
+
+}
+
+class Laptop{
+	void open(){}
+	void connectToProjector(){}
+}
+
+Bag sivaBag;
+Bag leenaBag
+Bag holidayBag;
+
+sivaBag = new Bag();//Creation of an Object, instantiation of an Object
+leenaBag - new Bag();
+
+sivaBag.placeBooks();
+Laptop l = sivaBag.takeLaptop();
+l.open();
+l.connectToProjector();
+----------------------
+OOP
+	Encapsulation
+	Abstraction
+	Inheritance
+	Polymorphism
+------------------
+
+Laptop is a computer. Computer is a machine
+
+Composition - has a
+Inheritance - is a
+
+iPhone has a Camera and an Internet Browser
+
+class iPhone{
+	Camera c
+	InternetBrowser ib;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
