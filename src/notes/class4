@@ -1,0 +1,74 @@
+Polymorphism
+	Method overloading
+	Method overriding
+
+Abstract classes
+
+Abstract class is a class whose object can't be created
+Abstract class can have abstract methods
+
+Interfaces
+
+Interface has only abstract methods
+
+
+Base class reference can be equated to child class objects
+Interface reference can be equated to implementation objects
+
+An interface can be implemented by any class
+A class can implement multiple interfaces
+---------------------
+final keyword : 
+If a class is final, there are no child classes for this class
+If a method is final, a child class can't override that method
+If an instance variable is final, then the value of that instance variable can't be changed
+
+class Fruit{
+	final float price;
+	public final float getPrice(){
+		return price;
+	}
+
+}
+class Orange extends Fruite{
+
+}
+
+final class Apple extends Fruit{
+
+}
+--------
+
+static 
+
+fields with static keyword are shared for all the objects of same type
+static methods can be invoked from class directly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
