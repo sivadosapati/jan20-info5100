@@ -1,0 +1,21 @@
+Working with Threads
+
+- Define the logic you would like to accomplish in a run() method of Thread class
+or 
+- Define the logic you would like to accompish in a run() method of Runnable interface
+
+Create the Thread 
+Start the Thread
+
+
+class XYZTh
+
+
+Thread life cycle
+
+Creation
+Start
+Run
+Done
+
+
