@@ -5,11 +5,11 @@ public class AppleStoreImpl implements AppleStore {
 	private iPhone[] phones = new iPhone[3];
 	private float saleAmount = 0;
 
-	AppleStoreImpl() {
+	public AppleStoreImpl() {
 		init();
 	}
 
-	private void init() {
+	protected void init() {
 		for (int i = 0; i < phones.length; i++) {
 			iPhone p = makePhone(i);
 			phones[i] = p;
@@ -78,6 +78,12 @@ public class AppleStoreImpl implements AppleStore {
 	@Override
 	public int getTotalSales() {
 		return (int) saleAmount;
+	}
+
+	@Override
+	public iPhone[] getPhones() {
+
+		return phones;
 	}
 
 }

@@ -2,6 +2,8 @@ package class6;
 
 public interface AppleStore {
 
+	public iPhone[] getPhones();
+
 	public iPhone buyPhone();
 
 	public void returnPhone(iPhone phone);

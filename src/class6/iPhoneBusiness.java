@@ -1,13 +1,18 @@
 package class6;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.Scanner;
 
 public class iPhoneBusiness {
 
 	public static void main(String[] args) {
 		// AppleStore as = new AppleStoreImpl();
-		AppleStore as = new AppleStoreArrayListImpl();
+		// AppleStore as = new AppleStoreArrayListImpl();
+		AppleStore as = new AppleStorePersistenceImpl();
 		Scanner scanner = new Scanner(System.in);
+
+		//BufferedReader br = new BufferedReader(new FileReader("a.txt"));
 		while (true) {
 			System.out.println("Please Type(BUY,RETURN,SALES,COUNT,STOCK,QUIT,PRINT) for your operation");
 			String line = scanner.nextLine();

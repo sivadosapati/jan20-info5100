@@ -1,5 +1,6 @@
 package class6;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,7 +37,8 @@ public class AppleStoreMapImpl implements AppleStore {
 
 	@Override
 	public void addPhones(int numberOfPhones) {
-		for (int i = phonesMap.size(); i < numberOfPhones + phonesMap.size(); i++) {
+		int max = phonesMap.size();
+		for (int i = phonesMap.size(); i < numberOfPhones + max; i++) {
 			iPhone p = makePhone(i);
 			phonesMap.put(p.number, p);
 		}
@@ -46,6 +48,17 @@ public class AppleStoreMapImpl implements AppleStore {
 	@Override
 	public int getTotalSales() {
 		return totalSales;
+	}
+
+	@Override
+	public iPhone[] getPhones() {
+		Collection<iPhone> phones = phonesMap.values();
+		iPhone phoneArray[] = new iPhone[phones.size()];
+		int count = 0;
+		for (iPhone p : phones) {
+			phoneArray[count++] = p;
+		}
+		return phoneArray;
 	}
 
 }

@@ -51,4 +51,9 @@ public class AppleStoreArrayListImpl implements AppleStore {
 		return phones.toString();
 	}
 
+	@Override
+	public iPhone[] getPhones() {
+		return (iPhone[]) phones.toArray();
+	}
+
 }
