@@ -1,0 +1,10 @@
+Working with GUI applications in Swing
+
+* Define a class that extends from one of the Container
+* Set the Layout to the Container
+* Create Components that you are interested in adding to the container
+* Add the Components to the Container
+* Identify the Components that need a Listener to perform an action on
+* Write a class that implements this Listener
+* Create an object of the listener and attach to components
+* Set the size for Container and make it visible
