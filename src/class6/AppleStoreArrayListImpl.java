@@ -56,4 +56,9 @@ public class AppleStoreArrayListImpl implements AppleStore {
 		return (iPhone[]) phones.toArray();
 	}
 
+	public void addPhone(iPhone phone) {
+		phones.add(phone);
+
+	}
+
 }
