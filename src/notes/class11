@@ -1,0 +1,36 @@
+Roll~First~Last~Grade
+100~Jing~Yang~A+
+
+102~Simeng~A~B+
+102~Siva~
+
+Common operations with files/database
+-----
+
+CREATE
+UPDATE
+DELETE
+READ
+SEARCH
+
+----Challenges with accessing files
+
+Direct data manipulation in files is not safe
+Inserting data in between means rewrite the whole file
+Deleting a record in between also means rewrite the whole file
+New records in file also meaning opening the file for edit and updating the end
+Scanning for records in file is sequential
+There is no normalization or redundancy removal on files
+
+---
+
+Database is an abstraction on File System
+
+----Steps for working with Databases in Java---
+
+
+Load the driver --- Class.forName(xxx).newInstance();
+Create the Connection --- Connection con = DriverManager.getConnection(xxxx);
+Create a Statement ---- Statement stmt = con.createStatement();
+Execute the Query on Statement - ResultSet rs = stmt.executeQuery("");
+Close all the ResultSet, Statement, Connection
